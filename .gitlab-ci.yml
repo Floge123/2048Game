@@ -1,0 +1,13 @@
+stages:
+  - build
+
+build:
+  stage: build
+  tags: 
+    - docker
+  image: maven:3.8.1-jdk-11
+  artifacts:
+    paths:
+      - target/*
+  script:
+    - mvn compile
