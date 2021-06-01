@@ -1,14 +1,10 @@
 name: deployment-workflow
 on: push
 
-env:
-  maven_packages_cache: ".m2/repository"
-  MAVEN_OPTS: "-Dmaven.repo.local=./$maven_packages_cache"
-
 jobs:
   build:
     name: build
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: mvn compile
       - name: Upload build stuff for job 1
@@ -19,14 +15,14 @@ jobs:
 
   test:
     name: test
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: build
     steps:
       - run: mvn test
 
   package:
     name: package
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: build
     steps:
       - run: mvn package
@@ -39,7 +35,7 @@ jobs:
 
   deploy_test:
     name: deploy_test
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: package
     environment:
       name: test
