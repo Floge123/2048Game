@@ -1,0 +1,25 @@
+
+u
+java:S1104"ZMake startTileCount a static final constant or non-public and provide accessors if needed.(©ÿéøÿÿÿÿ
+n
+java:S1104
+"XMake winCondition a static final constant or non-public and provide accessors if needed.(…Í•á
+m
+java:S1104"RMake random a static final constant or non-public and provide accessors if needed.(´Û¾µùÿÿÿÿ
+r
+java:S1104	"\Make placeRandomTiles a static final constant or non-public and provide accessors if needed.(ã•Öç
+7
+java:S1170"!Make this final field static too.(çº¶°
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÚÎĞ¿
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(½Êúıÿÿÿÿ
+s
+java:S2159)"VRemove this call to "equals"; comparisons between unrelated types always return false.(“ÅÌ8²À”—œ/
+s
+java:S2159C"VRemove this call to "equals"; comparisons between unrelated types always return false.(ŒŸÒø8²À”—œ/
+x
+java:S2159s"VRemove this call to "equals"; comparisons between unrelated types always return false.(ª•Îåıÿÿÿÿ8²À”—œ/
+t
+java:S2159¢"VRemove this call to "equals"; comparisons between unrelated types always return false.(ò½êŞ8²À”—œ/
+s
+java:S2159§"VRemove this call to "equals"; comparisons between unrelated types always return false.(‚¬Ÿ8²À”—œ/
