@@ -6,6 +6,11 @@ jobs:
     name: build
     runs-on: self-hosted
     steps:
+      - name: Cache Build Stuff
+        uses: actions/cache@v2
+        with:
+          path: ".m2/repository"
+          key: ${{runner.os}}-build
       - uses: actions/checkout@v2
       - run: mvn compile
       - name: Upload build stuff for job 1
@@ -26,6 +31,11 @@ jobs:
     runs-on: self-hosted
     needs: test
     steps:
+      - name: Cache Package Stuff
+        uses: actions/cache@v2
+        with:
+          path: ".m2/repository"
+          key: ${{runner.os}}-package
       - run: mvn package
       - name: Package Artifact from maven
         uses: actions/upload-artifact@v2
