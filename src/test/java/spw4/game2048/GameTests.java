@@ -51,7 +51,6 @@ class GameTests {
                       ".\t.\t.\t.\n";
 
     String result = sut.toString();
-    System.out.println(result);
 
     assertEquals(expected, result);
   }
@@ -72,7 +71,6 @@ class GameTests {
 
     sut.move(Direction.up);
     String result = sut.toString();
-    System.out.println(result);
 
     assertEquals(expected, result);
   }
@@ -93,7 +91,6 @@ class GameTests {
 
     sut.move(Direction.down);
     String result = sut.toString();
-    System.out.println(result);
 
     assertEquals(expected, result);
   }
@@ -114,7 +111,6 @@ class GameTests {
 
     sut.move(Direction.left);
     String result = sut.toString();
-    System.out.println(result);
 
     assertEquals(expected, result);
   }
@@ -135,7 +131,6 @@ class GameTests {
 
     sut.move(Direction.right);
     String result = sut.toString();
-    System.out.println(result);
 
     assertEquals(expected, result);
   }
@@ -156,7 +151,6 @@ class GameTests {
 
     sut.move(Direction.right);
     String result = sut.toString();
-    System.out.println(result);
 
     assertEquals(expected, result);
   }
@@ -177,7 +171,6 @@ class GameTests {
 
     sut.move(Direction.right);
     String result = sut.toString();
-    System.out.println(result);
 
     assertEquals(expected, result);
   }
@@ -198,7 +191,6 @@ class GameTests {
 
     sut.move(Direction.left);
     String result = sut.toString();
-    System.out.println(result);
 
     assertEquals(expected, result);
   }
@@ -219,7 +211,6 @@ class GameTests {
 
     sut.move(Direction.up);
     String result = sut.toString();
-    System.out.println(result);
 
     assertEquals(expected, result);
   }
@@ -239,8 +230,6 @@ class GameTests {
 
     sut.move(Direction.down);
     String result = sut.toString();
-    System.out.println(result);
-
     assertEquals(expected, result);
   }
 
@@ -261,7 +250,6 @@ class GameTests {
 
     sut.move(Direction.down);
     String result = sut.toString();
-    System.out.println(result);
 
     assertEquals(expected, result);
   }
@@ -319,7 +307,6 @@ class GameTests {
 
     sut.move(Direction.right);
     String result = sut.toString();
-    System.out.println(result);
 
     assertEquals(expected, result);
   }
@@ -359,8 +346,6 @@ class GameTests {
 
     sut.move(Direction.right);
     sut.move(Direction.right);
-
-    System.out.println(sut.toString());
 
     assertTrue(sut.isWon());
   }
