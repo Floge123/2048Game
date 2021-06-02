@@ -6,6 +6,7 @@ jobs:
     name: build
     runs-on: self-hosted
     steps:
+      - uses: actions/checkout@v2
       - run: mvn compile
       - name: Upload build stuff for job 1
         uses: actions/upload-artifact@v2
